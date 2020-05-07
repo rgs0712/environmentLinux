@@ -23,7 +23,7 @@ sudo apt install snapd -y;
 
 ##Install snaps##
     #Intellij#
-    sudo snap install intellij-idea-community;
+    sudo snap install intellij-idea-community --classic;
 
     #Spotify#
     sudo snap install spotify;
