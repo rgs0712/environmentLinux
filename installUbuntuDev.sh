@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update;
-sudo apt upgrade;
+sudo apt upgrade -y;
 
 #Install Meld#
 sudo apt install meld -y;
@@ -14,6 +14,9 @@ sudo apt install vim -y;
 
 #Install VLC
 sudo apt install vlc -y;
+
+#Install htop
+sudo apt install htop -y;
 
 #Install snapd#
 sudo apt install snapd -y;
@@ -28,8 +31,8 @@ sudo apt install snapd -y;
     #Visual studio code#
     sudo snap install code --classic;
 
-    #Dbeaver#
-    sudo snap install dbeaver-ce;
+    #Beekeeper Studio#
+    sudo snap install beekeeper-studio;
 
     #Discord#
     sudo snap install discord;
@@ -49,4 +52,5 @@ sudo apt install snapd -y;
     sudo dpkg -i *.deb;
 
 
-    
+##Update##
+sudo apt update;    
