@@ -86,10 +86,26 @@ sudo apt install snapd -y;
     tar -xvf jdk-8u202-linux-x64.tar.gz
     tar -xvf jdk-11.0.21_linux-x64_bin.tar.gz
     tar -xvf jdk-17_linux-x64_bin.tar.gz
+    tar -xvf jdk-17_linux-x64_bin.tar.gz
+    tar -xvf jdk-21.0.3_linux-x64_bin.tar.gz
     tar -xvf apache-maven-3.9.6-bin.tar.gz
 
+
+    mkdir -p jdk
+    mkdir -p maven
     sudo chmod -R 775 /opt
 
+    mv jdk-11.0.16.1 jdk/
+    mv jdk-17.0.7 jdk/
+    mv jdk1.8.0_341 jdk/
+    mv jdk-21.0.2 jdk/
+    mv apache-maven-3.9.6 maven/ 
+
+    ln -sfn /opt/jkd/java
+
+    sudo ln -sfn /opt/jdk/jdk-21.0.2 java
+
+    cp .bashrc_configs ~/ 
 
 ##Update##
 sudo apt update;    
