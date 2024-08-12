@@ -23,7 +23,8 @@ sudo apt install snapd -y;
 
 ##Install snaps##
     #Intellij#
-    sudo snap install intellij-idea-community --classic;
+    #sudo snap install intellij-idea-community --classic;
+    sudo snap install intellij-idea-ultimate --classic;
 
     #Spotify#
     sudo snap install spotify;
@@ -35,13 +36,13 @@ sudo apt install snapd -y;
     sudo snap install beekeeper-studio;
 
     #Discord#
-    sudo snap install discord;
+    #sudo snap install discord;
 
     #Postman#
     sudo snap install postman;
 
-    #standard-notes#
-    sudo snap install standard-notes;
+    #notion#
+    sudo snap install notion-snap-reborn;
 
     #docker#
     sudo snap install docker;
@@ -69,13 +70,16 @@ sudo apt install snapd -y;
     ##Java 17
     wget -c https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz;
 
+    ##Java 21
+    wget -c https://download.oracle.com/java/21/archive/jdk-21.0.3_linux-x64_bin.tar.gz;
+
     ## Maven 
     wget -c https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz;
 
 
-    sudo chmod -R 775 jdk-8u202-linux-x64.tar.gz jdk-11.0.21_linux-x64_bin.tar.gz jdk-17_linux-x64_bin.tar.gz apache-maven-3.9.6-bin.tar.gz
+    sudo chmod -R 775 jdk-8u202-linux-x64.tar.gz jdk-11.0.21_linux-x64_bin.tar.gz jdk-17_linux-x64_bin.tar.gz jdk-21.0.3_linux-x64_bin.tar.gz apache-maven-3.9.6-bin.tar.gz
 
-    sudo mv jdk-8u202-linux-x64.tar.gz jdk-11.0.21_linux-x64_bin.tar.gz jdk-17_linux-x64_bin.tar.gz apache-maven-3.9.6-bin.tar.gz /opt
+    sudo mv jdk-8u202-linux-x64.tar.gz jdk-11.0.21_linux-x64_bin.tar.gz jdk-17_linux-x64_bin.tar.gz jdk-21.0.3_linux-x64_bin.tar.gz apache-maven-3.9.6-bin.tar.gz /opt
 
     cd /opt
 
