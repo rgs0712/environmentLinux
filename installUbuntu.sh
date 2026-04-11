@@ -16,7 +16,7 @@ sudo snap install docker;
 sudo snap install pycharm --classic;
 sudo snap install spotify;
 sudo snap install postman;
-
+sudo snap install kubectl --classic;
 
 # --install sdkman 
 curl -s "https://get.sdkman.io" | bash;
